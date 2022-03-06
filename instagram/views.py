@@ -47,7 +47,7 @@ def index(request):
             "comments": comments,
             "users": users
         }
-    return render(request,'index.html',param)
+    return render(request,'index.html')
 
 @login_required(login_url='/accounts/login/')
 def post_pic(request):
