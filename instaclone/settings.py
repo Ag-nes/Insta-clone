@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'instagram',
     'crispy_forms',
+    'cloudinary',
     'bootstrap4',
     'tinymce',
     'django.contrib.admin',
@@ -130,3 +131,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# setting configuration parameters globally
+'cloudinary'.config( 
+  cloud_name = "ag-nes254", 
+  api_key = "935527415496544", 
+  api_secret = "O5r-EoiGODmOBjyuR88qahgCZfc",
+  
+)
