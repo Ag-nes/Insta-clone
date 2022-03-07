@@ -1,6 +1,6 @@
 from django.contrib.auth import forms
-from django.shortcuts import render,redirect
-from django.http import HttpResponse
+from django.shortcuts import render,redirect, get_object_or_404
+from django.http import HttpResponseRedirect, Http404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth.models import User
@@ -8,6 +8,12 @@ from instagram.forms import CommentForm, EditProfileForm, PostPicForm, ProfileUp
 from instagram.models import Image,Comment,Likes,Profile
 from cloudinary.models import CloudinaryField
 from django import forms
+from . forms import RegisterForm,User,Profile,Comment
+from .models import Image,Profile,Likes,Comment
+from .email import send_welcome_email
+
+
+
 
 # Create your views here.
 def registration(request):
