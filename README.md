@@ -5,7 +5,7 @@
     This is a clone of Instagram where people share their images and videos for other users to view. 
 
 # Live Link
-    
+ http://127.0.0.1:8000/   
 
 # User Story
     * Sign in to the application to start using 
