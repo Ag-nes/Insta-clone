@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0obzn&ug-4$#5tr!w6&eu%ory+sbtt&aaz096#-of=spy$jf=z'
+SECRET_KEY = 'O5r-EoiGODmOBjyuR88qahgCZfc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'instagram',
         'USER': 'gee',
         'PASSWORD': '12345',
-        'HOST': 'localhost',
+        'HOST': 'localhost','127.0.0.1'
         'POST': '',
     }
 }
@@ -129,7 +129,19 @@ USE_L10N = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    
+
+]
+
+MEDIA_URL ='media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
