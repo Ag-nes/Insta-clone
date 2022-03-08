@@ -83,16 +83,19 @@ WSGI_APPLICATION = 'instaclone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'instagram',
-        'USER': 'gee',
-        'PASSWORD': '12345',
-        'HOST': 'localhost','127.0.0.1'
-        'POST': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'instagram',
+#         'USER': 'gee',
+#         'PASSWORD': '12345',
+#         'HOST': 'localhost','127.0.0.1'
+#         'POST': '',
+#         'MODE': 'dev', #set to 'prod' in production
+#         'ALLOWED_HOSTS': '.localhost' '.herokuapp.com' '.127.0.0.1',
+#         'DISABLE_COLLECTSTATIC': '1'
+#     }
+# }
 
 
 # Password validation
