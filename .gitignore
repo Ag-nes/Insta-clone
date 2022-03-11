@@ -1,4 +1,1 @@
-virtual/
-.pys/
-db.sqlite3
 .env
