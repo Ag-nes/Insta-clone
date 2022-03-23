@@ -19,7 +19,7 @@
 
     Cloning the repository:
 
-    https://github.com/joankirui/Insta-clone.git 
+    https://github.com/Ag-nes/Insta-clone.git 
 
     Navigate into the folder and install requirements
 
